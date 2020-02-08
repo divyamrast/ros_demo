@@ -68,8 +68,8 @@ class SendMotorCommands():
 
 if __name__ == '__main__':
     try:
-        # Initializes a rospy node to let the SimpleActionClient publish and subscribe
+
         sendGoal = SendMotorCommands()
 
     except rospy.ROSInterruptException:
-        rospy.loginfo("Command to motor stopped")
+        rospy.loginfo("Command to robot stopped")
